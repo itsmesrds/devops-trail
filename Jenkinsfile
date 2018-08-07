@@ -7,7 +7,7 @@ node {
 	}
 	stage ('Build image'){
 	
-	app=sudo usermod -aG docker.build("itsmesrds/try1")
+	app=docker.build("itsmesrds/try1").withRun('-u root')
 		
 	}
 	stage('Test image'){
