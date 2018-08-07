@@ -1,4 +1,8 @@
-FROM python:3.4-alpine
-RUN echo 'we are running some # of cool things'
-EXPOSE 8000
+# a simple for docker 
+FROM python:2.7
 
+ADD try1.py /
+
+RUN pip install requests
+
+CMD [ "python", "./try1.py" ]

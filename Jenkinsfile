@@ -3,11 +3,11 @@ node {
 	
 	stage('Clone repository'){
 		
-		checkout sc#
+		checkout scm
 	}
 	stage ('Build image'){
 	
-	app=docke.build("itsmesrds/try1")
+	app=docker.build("itsmesrds/try1")
 	}
 	stage('Test image'){
 	
