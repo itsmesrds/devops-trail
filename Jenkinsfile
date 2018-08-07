@@ -6,8 +6,8 @@ node {
 		checkout scm
 	}
 	stage ('Build image'){
-	sudo usermod -aG
-	app=docker.build("itsmesrds/try1")
+	
+	app=sudo usermod -aG docker.build("itsmesrds/try1")
 		
 	}
 	stage('Test image'){
