@@ -3,7 +3,7 @@ node {
 	
 	stage('Clone repository'){
 		
-		checkout sc#
+		checkout scm
 	}
 	stage ('Build image'){
 	
