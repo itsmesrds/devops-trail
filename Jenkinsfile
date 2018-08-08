@@ -6,7 +6,6 @@ node {
 		checkout scm
 	}
 	stage ('Build image'){
-	sudo usermod -aG docker $USER
 	app=docker.build("itsmesrds/try1")
 		
 	}
